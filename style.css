@@ -1,0 +1,187 @@
+html { 
+    font-family: 'Poppins', Arial, sans-serif; 
+} 
+  
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    color: black;
+    height: 80px;
+    
+} 
+  
+#page-title { 
+    text-align: center; 
+    color: black;
+    font-size: 400%; 
+    text-shadow: #e8ec0c;
+} 
+  
+.p-Table { 
+    display: grid; 
+    grid-template-columns:  
+        repeat(18, [group] minmax(5em, 1fr)); 
+    grid-template-rows: repeat(7,  
+        [period] 1fr) [row6x] 1fr [row7x] 1fr [row6x] 1fr; 
+    grid-gap: 0.5em; 
+    counter-reset: atomic-number; 
+} 
+  
+.p-Table::before { 
+    content: ''; 
+    grid-row: row6x / span 3; 
+    grid-column: 1 / 3; 
+} 
+  
+.ele { 
+    border: thin solid black; 
+    text-align: center; 
+    opacity: 0.85; 
+} 
+  
+.ele:hover, 
+.ele:focus { 
+    opacity: 1; 
+    font-weight: bold;
+
+
+} 
+  
+.ele-name { 
+    border-bottom: none !important; 
+    text-decoration: none !important; 
+    word-break: break-all; 
+    hyphens: auto; 
+    font-size: 1.5em; 
+    counter-increment: atomic-number; 
+} 
+  
+.ele-name::before { 
+    font-size: 0.8rem; 
+    display: block; 
+    content: counter(atomic-number); 
+    color: black; 
+} 
+  
+.ele-name::after { 
+    font-size: 0.85rem; 
+    display: block; 
+    content: attr(title); 
+} 
+  
+.ele-57, 
+.ele-89 { 
+    position: relative; 
+    background-color: #b034e4;
+} 
+  
+
+  
+.ele-57::before, 
+.ele-89::before { 
+    top: calc(-200% - 1rem); 
+} 
+  
+.ele-57, 
+.ele-57{ 
+    content: '*'; 
+} 
+  
+
+  
+.ele-57::after, 
+.ele-89::after { 
+    left: calc(-50% - 1rem); 
+} 
+  
+.ele-5, 
+.ele-13 { 
+    grid-column: 13; 
+} 
+  
+.ele-72, 
+.ele-104 { 
+    grid-column: 4; 
+} 
+  
+.lan-group { 
+    grid-row: row6x; 
+    position: relative; 
+    top: 1em; 
+} 
+  
+.a-grp { 
+    grid-row: row7x; 
+    position: relative; 
+    top: 1em; 
+} 
+  
+.n-gas { 
+    grid-column: 18; 
+} 
+  
+
+  
+.lan { 
+    background-color: #7214cc;
+} 
+  
+.actinide { 
+    background-color: hotpink; 
+} 
+  
+.al-metal { 
+    background-color: #f42c14; 
+} 
+  
+.alearth-metal { 
+    background-color: #ec6a1c; 
+} 
+  
+.d-nonmetal { 
+    background-color:  #14844c; 
+} 
+  
+.patomic-nonmetal { 
+    background-color: #1c848c; 
+} 
+  
+.pTransition-metal { 
+    background-color: #246ce4; 
+} 
+  
+.metalloid { 
+    background-color: #14844c; 
+} 
+  
+.n-gas { 
+    background-color: #e41ca4; 
+} 
+  
+.trans { 
+    background-color: #e8ec0c;
+    
+} 
+  
+.liquid { 
+    color: black; 
+} 
+  
+.gas { 
+    color: black; 
+}
+
+.ele-90, .ele-91, .ele-92, .ele-93, .ele-94, .ele-80, .ele-48, .ele-30{
+    background-color: #e8ec0c;
+}
+.ele-95,.ele-96,.ele-97,.ele-100,.ele-101,.ele-102,.ele-103,.ele-118,.ele-99{
+    background-color: #40c4c4;
+}
+.ele-82,.ele-83, .ele-98,.ele-{
+    background-color: #246ce4;
+}
+.ele-57{
+    background-color: #7214cc;
+}
+
